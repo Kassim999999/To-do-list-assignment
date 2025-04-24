@@ -1,8 +1,16 @@
-import React from 'react'
+import TaskItem from './TaskItem'
 
-const TaskList = () => {
+function TaskList({ tasks, onDelete }) {
   return (
-    <div>TaskList</div>
+    <ul className="todo-list">
+      {tasks.map(task => (
+        <TaskItem
+          key={task.id}
+          todo={task}
+          onDelete={onDelete}
+        />
+      ))}
+    </ul>
   )
 }
 
