@@ -1,8 +1,24 @@
-import React from 'react'
-
-const TaskItem = () => {
+function TaskItem({ task, onDelete }) {
   return (
-    <div>TaskItem</div>
+    <li className="todo-item">
+      <div className="todo-content">
+        <input
+          type="checkbox"
+          checked={task.completed}
+          readOnly
+          className="task-checkbox"
+        />
+        <span className={task.completed ? 'task-title completed' : 'task-title'}>
+          {task.title}
+        </span>
+      </div>
+      <button
+        onClick={() => onDelete(task.id)}
+        className="delete-button"
+      >
+        Delete
+      </button>
+    </li>
   )
 }
 
