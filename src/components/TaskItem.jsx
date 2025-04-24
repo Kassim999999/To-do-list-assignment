@@ -16,7 +16,7 @@ function TaskItem({ task, onDelete }) {
         onClick={() => onDelete(task.id)}
         className="delete-button"
       >
-        Delete
+        <i class="fa-solid fa-trash"></i>
       </button>
     </li>
   )

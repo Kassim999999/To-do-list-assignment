@@ -23,8 +23,9 @@ function AddTaskForm({ onAdd }) {
       <button
         type="submit"
         className="add-button"
+        
       >
-        Add
+        <i class="fa-solid fa-plus"></i>
       </button>
     </form>
   )

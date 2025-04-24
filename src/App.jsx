@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import TaskList from './components/TaskList'
 import AddTaskForm from './components/AddTaskForm'
-import './App.css'
 
 
 
